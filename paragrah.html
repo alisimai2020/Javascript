@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+       
+
+
+ 
+     
+
+        function Paragraph() {
+           
+           
+            const para = document.querySelectorAll('p');
+            let count =0;
+
+            // btn.addEventListener('click',() =>{
+                    
+            //         btn.innerText = 'Change To Small';
+            //    });
+
+
+            para.forEach(p =>{
+
+                const text = p.textContent;
+                count++;
+
+
+                if (!( text === p.textContent.toUpperCase())) {
+                    p.textContent= p.textContent.toUpperCase();
+                    btn = document.querySelector('button').textContent ='Change to Smaller'
+                
+                    p.textContent= p.textContent.toUpperCase();
+                    
+                   
+                    p.style.color ='yellow';
+                    const result = p.textContent;
+                    console.log(`${result} is in uppercase`);
+                    alert(`All paragraph are in uppercase ${result} and this is ${count} paragraph`);
+
+                }
+            });
+                   
+                   
+
+               
+        }
+
+        
+
+
+    </script>
+</head>
+<body>
+
+    <div>Do you trust the authors of the files in this folder?
+        Code provides features that may automatically execute files in this folder.
+        
+        If you don't trust the authors of these files, we recommend to continue in restricted mod
+        <h3>Wazo la leo</h3>
+        <p>Wazo la leo linahusu <em><span style="font-size: 20px;">kipindi cha Jumamosi</span></em></p>
+        <p>Baadhi ya supported ni kuwahi mapema</p>
+
+
+        <button onclick="Paragraph()">Click to Capitalize Paragraphs</button>
+    </div>
+
+
+</body>
+</html>

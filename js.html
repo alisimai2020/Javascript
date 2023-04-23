@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+  </head>
+  <body>
+    <h1>Welcome to my Example Page</h1>
+    <img src="image1.jpg" alt="Image 1">
+
+  
+    <!-- <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3"> -->
+    <script>
+      function replaceImagesWithGiphy() {
+        const images = document.querySelectorAll('img');
+        const Url = 'https://media.giphy.com/media/jaqvaWqpKfImQ/giphy.gif';
+        // for (let i = 0; i < images.length; i++) {
+        //   images[i].src = Url;
+        //   console.log(i);
+        //   console.log( images[i]);
+          
+        // }
+
+
+        images.forEach(image=>{
+            // console.log(img);
+
+            image.src = Url;
+            console.log(image);
+            
+        })
+       
+      }
+      replaceImagesWithGiphy();
+    </script>
+  </body>
+</html>
